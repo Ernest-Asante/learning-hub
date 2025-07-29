@@ -12,31 +12,12 @@ import {getAuth} from "firebase/auth";
 
 
 const firebaseConfig = {
-  /* apiKey: "AIzaSyDx5l1Y_zxFhpPXZW-GkpOSUeTIoCCL2Nc",
-    authDomain: "waecbay.firebaseapp.com",  
-    projectId: "waecbay",
-    storageBucket: "waecbay.appspot.com",
-    messagingSenderId: "311653883444",
-    appId: "1:311653883444:web:81ec195195c09505cab461",
-    measurementId: "G-4C3LL04W8H" */
+  /*USE YOUR OWN FIREBASE CONFIG HERE */
    
 
-     /* apiKey: "AIzaSyCiOxHtH7dY7e8mGRTnZlAWBjrU00_J900", 
-      authDomain: "egc-virtualclassroom.firebaseapp.com", 
-      projectId: "egc-virtualclassroom",
-      storageBucket: "egc-virtualclassroom.appspot.com",
-      messagingSenderId: "30249766821",
-      appId: "1:30249766821:web:8c7f8a950f21d4641be24c", 
-      measurementId: "G-TJ4H380G6L"  */
 
 
-      apiKey: "AIzaSyANk4tOk7yr0WYu9_513D3Nf3LW3qJQUYo",
-      authDomain: "mylearning-hub.firebaseapp.com",
-      projectId: "mylearning-hub",
-      storageBucket: "mylearning-hub.appspot.com",
-      messagingSenderId: "264915107592",
-      appId: "1:264915107592:web:ecb202cc28452dc4beb6bd",
-      measurementId: "G-H2EVSSSPQ8"
+     
     
   }; 
  
