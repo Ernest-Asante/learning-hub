@@ -11,15 +11,15 @@ import {getAuth} from "firebase/auth";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 
-const firebaseConfig = {
-  /*USE YOUR OWN FIREBASE CONFIG HERE */
-   
-
-
-
-     
-    
-  }; 
+const firebaseConfig = { 
+  apiKey: "AIzaSyANk4tOk7yr0WYu9_513D3Nf3LW3qJQUYo",
+  authDomain: "mylearning-hub.firebaseapp.com",
+  projectId: "mylearning-hub",
+  storageBucket: "mylearning-hub.appspot.com",
+  messagingSenderId: "264915107592",
+  appId: "1:264915107592:web:ecb202cc28452dc4beb6bd",
+  measurementId: "G-H2EVSSSPQ8"
+};
  
 // Initialize Firebase
 const app = initializeApp(firebaseConfig); 
