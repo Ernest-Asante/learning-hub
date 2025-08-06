@@ -35,31 +35,27 @@ function GoogleSignIn() {
 
   const auth = getAuth();
   const provider= new GoogleAuthProvider();
-  const Signup=async()=>{await signInWithPopup(auth, provider)
-    .then((result) => {
-      // This gives you a Google Access Token. You can use it to access the Google API.
-      //const credential = GoogleAuthProvider.credentialFromResult(result);
-      //const token = credential.accessToken;
-      // The signed-in user info.
-      const user = result.user;
-      console.log(user)
-      navigate('/transitioning')
-      // IdP data available using getAdditionalUserInfo(result)
-      // ...
-      console.log(result)
-    }).catch((error) => {
-      // Handle Errors here.
-      //const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorMessage)
-      // The email of the user's account used.
-      //const email = error.customData.email;
-      // The AuthCredential type that was used.
-     // const credential = GoogleAuthProvider.credentialFromError(error);
-      // ...
-    });
-}
+  const Signup = async () => {
+  const auth = getAuth();
+  const provider = new GoogleAuthProvider();
 
+  try {
+    const result = await signInWithPopup(auth, provider);
+    console.log('User signed in:', result.user);
+
+    // Navigate after successful sign-in
+    navigate('/transitioning');
+
+    // Optional: log the full result
+    console.log(result);
+  } catch (error) {
+    if (error.code === 'auth/popup-closed-by-user') {
+      console.log('Popup was closed before completing sign-in.');
+    } else {
+      console.error('Sign-in error:', error.message);
+    }
+  }
+};
   return(
     <>
        <AppBar position="fixed" sx={{bgcolor:"white", marginBottom:8,display:{xs:'block',sm:"block"}}}>
